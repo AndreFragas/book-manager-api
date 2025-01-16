@@ -32,6 +32,34 @@
 $ npm install
 ```
 
+## Configure the Database
+
+To configure the database, we will use a free online service. Follow the steps below to set up the database instance:
+
+1 - Create an account
+
+Go to [Tembo.io](https://cloud.tembo.io/) and create an account.
+
+2 - Create a Database Instance
+
+After logging in, create a new database instance. Choose the "Standard" plan and the "Hobby" version, which is free.
+
+3 - Copy the Database Connection Link
+
+After the instance is created, locate the database connection link. You will need this link to configure the database access in your project.
+
+4 - Create the .env file
+
+In the root directory of your project, create a .env file based on the .env.example file. This file should include the DATABASE_URL environment variable set to the connection string you copied in the previous step.
+
+5 - Run Prisma Migrations
+
+o create the necessary tables in your database, run Prisma migrations. In the terminal, execute the following command:
+
+```bash
+$ npx prisma migrate deploy
+```
+
 ## Compile and run the project
 
 ```bash
