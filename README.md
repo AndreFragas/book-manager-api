@@ -54,7 +54,7 @@ In the root directory of your project, create a .env file based on the .env.exam
 
 5 - Run Prisma Migrations
 
-o create the necessary tables in your database, run Prisma migrations. In the terminal, execute the following command:
+Create the necessary tables in your database, run Prisma migrations. In the terminal, execute the following command:
 
 ```bash
 $ npx prisma migrate deploy
