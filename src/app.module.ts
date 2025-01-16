@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { BookModule } from './infra/http/modules/book/book.module';
 import { DataBaseModule } from './infra/database/database.module';
+import { BookModule } from './modules/book/book.module';
 
 
 @Module({

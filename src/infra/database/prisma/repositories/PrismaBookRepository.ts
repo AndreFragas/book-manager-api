@@ -37,12 +37,14 @@ export class PrismaBookRepository implements BookRepository {
     async update(book: Book) {
         const bookRaw = PrismaBookMapper.toPrisma(book);
         
-        await this.prisma.book.update({
+        const updatedBook = await this.prisma.book.update({
             data: bookRaw,
             where: { 
                 id: book.id
             }
         })
+
+        return updatedBook
     }
 
     async list(): Promise<Book[]> {
